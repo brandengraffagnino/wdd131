@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whidbey Island</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+    <h1>Whidbey Island, Washington</h1>
+</header>
+<main>
+    <div class="hero">
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/whidbey-large.webp">
+            <source media="(min-width: 500px)" srcset="images/whidbey-medium.webp">
+            <img src="images/whidbey-small.webp" alt="Deception Pass Bridge at sunset on Whidbey Island, Washington" width="1500" height="750">
+        </picture>
+    </div>
+    <section class="data">
+        <h2>Data</h2>
+        <p><strong>Area:</strong> 168 sq mi</p>
+        <p><strong>Population:</strong> 69,480</p>
+        <p><strong>State:</strong> Washington</p>
+        <p><strong>County:</strong> Island County</p>
+        <p><strong>Largest Town:</strong> Oak Harbor</p>
+        <p><strong>Time Zone:</strong> Pacific Time</p>
+        <p><strong>Founded:</strong> 1792</p>
+        <p><strong>Known For:</strong> Deception Pass Bridge</p>
+    </section>
+    <section class="weather">
+        <h2>Weather</h2>
+        <img src="images/weather.svg" alt="Partly Cloudy">
+        <p><strong>Temperature:</strong> 45°F</p>
+        <p><strong>Conditions:</strong> Partly Cloudy</p>
+        <p><strong>Wind:</strong> 12 mph</p>
+        <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+    </section>
+</main>
+<footer>
+    <p>
+        &copy; <span id="currentyear"></span>
+        🏝️ Branden Graffagnino 🏝️ Whidbey Island
+    </p>
+    <p id="lastModified"></p>
+</footer>
+</body>
+</html>
