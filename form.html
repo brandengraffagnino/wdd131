@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Review Form">
+    <meta name="author" content="Branden Graffagnino">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Product Review</h1>
+</header>
+<main>
+        <label for="product">Product Name*</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>
+                Select a Product ...
+            </option>
+        </select>
+        <fieldset>
+            <legend>Overall Rating*</legend>
+            <input type="radio" id="star1" name="rating" value="1" required>
+            <label for="star1">★</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">★★</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">★★★</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">★★★★</label>
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">★★★★★</label>
+        </fieldset>
+        <label for="install-date">
+            Date of Installation*
+        </label>
+        <input
+            type="date"
+            id="install-date"
+            name="install-date"
+            required>
+        <fieldset>
+            <legend>
+                Which features did you find useful?
+                (Check all that apply)
+            </legend>
+            <input
+                type="checkbox"
+                id="durability"
+                name="features"
+                value="Durability">
+            <label for="durability">Durability</label>
+            <input
+                type="checkbox"
+                id="ease"
+                name="features"
+                value="Ease of Use">
+            <label for="ease">Ease of Use</label>
+            <input
+                type="checkbox"
+                id="performance"
+                name="features"
+                value="Performance">
+            <label for="performance">Performance</label>
+            <input
+                type="checkbox"
+                id="design"
+                name="features"
+                value="Design">
+            <label for="design">Design</label>
+        </fieldset>
+        <label for="review">
+            Written Review
+        </label>
+        <textarea
+            id="review"
+            name="review"
+            rows="6"></textarea>
+        <label for="username">
+            Your Name
+        </label>
+        <input
+            type="text"
+            id="username"
+            name="username">
+        <input
+            type="submit"
+            value="Post Review">
+    </form>
+</main>
+<footer>
+    <p>
+        &copy; <span id="currentyear"></span>
+        🏓 Branden Graffagnino 🏓 Arizona
+    </p>
+    <p>
+        Last Modified:
+        <span id="lastModified"></span>
+    </p>
+</footer>
+
+</body>
+</html>
