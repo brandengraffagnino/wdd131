@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find pickleball courts near you.">
+    <meta name="author" content="Branden Graffagnino">
+    <title>Pickleball Hub | Find Courts</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/courts.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>🏓 Pickleball Hub</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="rules.html">Rules</a>
+        <a href="courts.html">Find Courts</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<main>
+    <h2>Find Courts Near You</h2>
+    <section>
+        <img src="images/pickleball-courts.webp" alt="Pickleball courts" loading="lazy">
+        <p>
+            Pickleball courts can be found throughout Arizona. Select
+            a city below to view a popular place to play.
+        </p>
+    </section>
+    <section class="court-selector">
+        <h3>Select a City</h3>
+        <select id="citySelect">
+            <option value="">Choose a City</option>
+            <option value="Gilbert">Gilbert</option>
+            <option value="Mesa">Mesa</option>
+            <option value="Chandler">Chandler</option>
+            <option value="Phoenix">Phoenix</option>
+        </select>
+    </section>
+    <section id="courtInfo">
+        <h3>Court Information</h3>
+        <p>
+            Select a city to see court information.
+        </p>
+    </section>
+</main>
+<footer>
+    <p>
+        &copy; <span id="currentyear"></span>
+        🏓 Branden Graffagnino 🏓 
+    </p>
+    <p>
+        Last Modified:
+        <span id="lastModified"></span>
+    </p>
+    <p>
+        <a href="references.html">References</a>
+    </p>
+</footer>
+</body>
+</html>

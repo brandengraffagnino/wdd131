@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Pickleball Hub and share your thoughts about the sport.">
+    <meta name="author" content="Branden Graffagnino">
+    <title>Pickleball Hub | Contact</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>🏓 Pickleball Hub</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="rules.html">Rules</a>
+        <a href="courts.html">Find Courts</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<main>
+    <h2>Contact Us</h2>
+    <p>
+        Have a question about pickleball or want to share your experience?
+        Fill out the form below.
+    </p>
+    <form id="contactForm" method="get">
+        <label for="name">Name</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            required>
+        <label for="email">Email</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required>
+        <label for="experience">Experience Level</label>
+        <select
+            id="experience"
+            name="experience"
+            required>
+            <option value="" disabled selected>
+                Select your experience level
+            </option>
+            <option value="Beginner">
+                Beginner
+            </option>
+            <option value="Intermediate">
+                Intermediate
+            </option>
+            <option value="Advanced">
+                Advanced
+            </option>
+        </select>
+        <label for="favoritePaddle">
+            Favorite Paddle Generation
+        </label>
+        <select
+            id="favoritePaddle"
+            name="favoritePaddle">
+            <option value="Gen 1">Gen 1</option>
+            <option value="Gen 2">Gen 2</option>
+            <option value="Gen 3">Gen 3</option>
+            <option value="Gen 4">Gen 4</option>
+        </select>
+        <label for="comments">
+            Comments
+        </label>
+        <textarea
+            id="comments"
+            name="comments"
+            rows="5"></textarea>
+        <input
+            type="submit"
+            value="Submit Feedback">
+    </form>
+    <section>
+        <h3>Site Feedback Counter</h3>
+        <p>
+            Feedback submissions recorded:
+            <span id="submissionCount">0</span>
+        </p>
+    </section>
+</main>
+<footer>
+    <p>
+        &copy; <span id="currentyear"></span>
+        🏓 Branden Graffagnino 🏓
+    </p>
+    <p>
+        Last Modified:
+        <span id="lastModified"></span>
+    </p>
+    <p>
+        <a href="references.html">References</a>
+    </p>
+</footer>
+</body>
+</html>

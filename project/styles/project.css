@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1E88E5;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+}
+
+nav a:hover {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.fact-section {
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: .75rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .9;
+}
+
+footer {
+    background-color: #1E88E5;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: white;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.filter-buttons button {
+    margin: .25rem;
+}
+
+.equipment-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.equipment-gallery section {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+}
+
+.equipment-gallery h3 {
+    color: #1E88E5;
+    margin-bottom: .75rem;
+}
+
+.equipment-gallery img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 1rem;
+    border-radius: 8px;
+}
+
+.equipment-gallery p {
+    margin-bottom: .5rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .equipment-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+.quiz-section {
+    text-align: center;
+}
+
+.quiz-btn {
+    margin: .5rem;
+}
+
+#quiz-result {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.court-selector {
+    text-align: center;
+}
+
+.court-selector select {
+    padding: .75rem;
+    margin-top: .5rem;
+}
+
+#courtInfo {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+form {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: .75rem;
+    margin-top: .25rem;
+}
+
+input[type="submit"] {
+    margin-top: 1rem;
+}
